@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+/* Custom focus styles for accessibility */
+:focus {
+  outline: none;
+}
+
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+/* Light/dark background */
+body {
+  background-color: #f8fafc;
+}
