@@ -26,9 +26,6 @@ export default function TicketCard({ ticket, onEdit, onDelete }) {
           >
             {status.replace("_", " ")}
           </div>
-          <div className="mt-2 text-sm text-gray-500">
-            Priority: {ticket.priority || "Normal"}
-          </div>
         </div>
       </div>
 

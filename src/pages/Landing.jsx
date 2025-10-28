@@ -26,7 +26,7 @@ export default function Landing() {
           <div className="relative flex flex-col md:flex-row items-center gap-8">
             <div className="flex-1">
               <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">
-                Ticketly — Simplify your support workflow
+                FlowDesk, Simplify your support workflow
               </h1>
               <p className="mt-4 text-lg text-white/90">
                 Create, track and resolve tickets with a delightful UI. Built
@@ -57,22 +57,36 @@ export default function Landing() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
             <h3 className="font-semibold">Fast setup</h3>
-            <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-              Start tracking tickets in minutes with local session support and
-              flexible flows.
+            <p className="mt-1 text-sm text-indigo-600">
+              Start in minutes no servers required.
+            </p>
+            <p className="mt-3 text-sm text-gray-500 dark:text-gray-400">
+              Create and triage tickets immediately with install-free local
+              sessions and sensible defaults. Perfect for prototypes, demos, or
+              quick team trials.
             </p>
           </div>
+
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
-            <h3 className="font-semibold">Accessible</h3>
-            <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-              Keyboard friendly, semantic HTML and focus states for improved
-              accessibility.
+            <h3 className="font-semibold">Real-time visibility</h3>
+            <p className="mt-1 text-sm text-indigo-600">
+              See status at a glance.
+            </p>
+            <p className="mt-3 text-sm text-gray-500 dark:text-gray-400">
+              Dashboards, filters and clear status labels help teams spot
+              blockers and prioritize work faster. Less time hunting, more time
+              fixing.
             </p>
           </div>
+
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
-            <h3 className="font-semibold">Responsive</h3>
-            <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-              Layouts that adapt across mobile, tablet and desktop.
+            <h3 className="font-semibold">Collaborate seamlessly</h3>
+            <p className="mt-1 text-sm text-indigo-600">
+              Share context and stay aligned.
+            </p>
+            <p className="mt-3 text-sm text-gray-500 dark:text-gray-400">
+              Comments, history and quick assignment reduce back-and-forth.
+              Handoffs are clear and fast so your team can keep momentum.
             </p>
           </div>
         </div>

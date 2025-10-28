@@ -4,7 +4,7 @@ import TicketCard from "../components/TicketCard";
 import Modal from "../components/Modal";
 import { useToast } from "../contexts/ToastContext";
 
-const empty = { title: "", description: "", status: "open", priority: "" };
+const empty = { title: "", description: "", status: "open" };
 
 export default function Tickets() {
   const toast = useToast();
@@ -45,8 +45,6 @@ export default function Tickets() {
       eobj.status = "Invalid status";
     if (form.description && form.description.length > 1000)
       eobj.description = "Description is too long (max 1000 chars)";
-    if (form.priority && form.priority.length > 50)
-      eobj.priority = "Priority is too long (max 50 chars)";
 
     setErrors(eobj);
     if (Object.keys(eobj).length > 0) {
@@ -138,22 +136,6 @@ export default function Tickets() {
             {errors.description && (
               <div id="description-error" className="text-xs text-red-600 mt-1">
                 {errors.description}
-              </div>
-            )}
-          </div>
-
-          <div className="md:col-span-2">
-            <label className="block text-sm">Priority</label>
-            <input
-              value={form.priority}
-              name="priority"
-              aria-describedby={errors.priority ? "priority-error" : undefined}
-              onChange={(e) => setForm({ ...form, priority: e.target.value })}
-              className="mt-1 w-full px-3 py-2 rounded border"
-            />
-            {errors.priority && (
-              <div id="priority-error" className="text-xs text-red-600 mt-1">
-                {errors.priority}
               </div>
             )}
           </div>

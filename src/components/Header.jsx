@@ -16,10 +16,10 @@ export default function Header() {
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-full bg-linear-to-br from-indigo-500 to-pink-500 flex items-center justify-center text-white font-bold">
-            T
+            F
           </div>
           <div>
-            <div className="font-semibold">Ticketly</div>
+            <div className="font-semibold">FlowDesk</div>
             <div className="text-xs text-gray-500 dark:text-gray-400">
               Ticket Management
             </div>
